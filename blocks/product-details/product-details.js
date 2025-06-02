@@ -228,6 +228,7 @@ export default async function decorate(block) {
       if (product) {
         setMetaTags(product);
         document.title = product.name;
+        $ratings.append(`${product.rating.average} stars average (out of ${product.rating.total} ratings)`);
       }
     },
     { eager: true },
