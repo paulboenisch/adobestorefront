@@ -86,7 +86,7 @@ export default async function decorate(block) {
   );
   const $description = fragment.querySelector('.product-details__description');
   const $attributes = fragment.querySelector('.product-details__attributes');
-
+  const $ratings = fragment.querySelector('.product-details__ratings');
   block.appendChild(fragment);
 
   // Alert
