@@ -56,6 +56,7 @@ await initializeDropin(async () => {
     ProductDetails: {
       initialData: { ...product },
     },
+    transformer: (data) => data,
   };
 
   // Initialize Dropins
